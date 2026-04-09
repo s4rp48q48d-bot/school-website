@@ -117,25 +117,34 @@ footer {
 </footer>
 
 <script>
-// GET SECTION NAME
+// GET SECTION NAME FROM URL
 const params = new URLSearchParams(window.location.search);
-const sectionName = params.get("name");
+let sectionName = params.get("name");
+
+console.log("URL name:", sectionName);
 
 // LOAD DATA
 fetch('data/sections.json')
 .then(res => res.json())
 .then(data => {
 
-  // 🔥 FIX: safer match (ignores case + spaces)
   const section = data.find(s =>
-    s.Section.toLowerCase() === sectionName.toLowerCase()
+    s.Section.toLowerCase().trim() ===
+    sectionName.toLowerCase().trim()
   );
+
+  console.log("FOUND:", section);
 
   if(section){
 
     document.getElementById('sectionTitle').innerText = section.Section;
 
-    // 🔥 FIX: avoid empty images
+    document.getElementById('director').innerText = section.Director || "";
+    document.getElementById('email').innerText = section.Email || "";
+    document.getElementById('phone').innerText = section.Phone || "";
+    document.getElementById('grades').innerText = section.Grade || "";
+    document.getElementById('description').innerText = section.Description || "";
+
     if(section.Image1)
       document.getElementById('img1').src = "images/" + section.Image1;
 
@@ -145,15 +154,10 @@ fetch('data/sections.json')
     if(section.DirectorImage)
       document.getElementById('directorImg').src = "images/" + section.DirectorImage;
 
-    document.getElementById('director').innerText = section.Director;
-    document.getElementById('email').innerText = section.Email;
-    document.getElementById('phone').innerText = section.Phone;
-
-    // 🔥 FIX: Grade (not Grades)
-    document.getElementById('grades').innerText = section.Grade;
-
-    document.getElementById('description').innerText = section.Description;
+  } else {
+    console.log("❌ No section matched");
   }
+
 });
 </script>
 
