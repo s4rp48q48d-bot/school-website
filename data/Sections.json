@@ -1,0 +1,57 @@
+[
+ {
+   "Section": "Secondaire",
+   "Director": "Mr. Wissam Zaarour",
+   "Email": "cs.jbeil@rosaire.edu.lb",
+   "Phone": 9619945190,
+   "Grade": "S1 - S2 - S3",
+   "Description": "",
+   "Image1": "",
+   "Image2": "",
+   "DirectorImage": "wissam.jpg"
+ },
+ {
+   "Section": "Complementaire",
+   "Director": "Sr. Roula Akar",
+   "Email": "cc.jbeil@rosaire.edu.lb",
+   "Phone": 9619945190,
+   "Grade": "EB7 - EB8 - EB9",
+   "Description": "",
+   "Image1": "",
+   "Image2": "",
+   "DirectorImage": "roula.jpg"
+ },
+ {
+   "Section": "Primaire II",
+   "Director": "Mrs. Aurore Haddad",
+   "Email": "cp2.jbeil@rosaire.edu.lb",
+   "Phone": 9619945190,
+   "Grade": "EB4 - EB5 - EB6",
+   "Description": "",
+   "Image1": "",
+   "Image2": "",
+   "DirectorImage": ""
+ },
+ {
+   "Section": "Primaire I",
+   "Director": "Mrs. Sophia Daher",
+   "Email": "cp1.jbeil@rosaire.edu.lb",
+   "Phone": 9619945190,
+   "Grade": "EB1 - EB2 - EB3",
+   "Description": "",
+   "Image1": "",
+   "Image2": "",
+   "DirectorImage": ""
+ },
+ {
+   "Section": "Maternelle",
+   "Director": "Mrs. Dalia Issa",
+   "Email": "cm.jbeil@rosaire.edu.lb",
+   "Phone": 9619945190,
+   "Grade": "PS - MS - GS",
+   "Description": "",
+   "Image1": "",
+   "Image2": "",
+   "DirectorImage": ""
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+   "Rule": "Respect all teachers, staff, and classmates at all times.",
+   "Consequence": "Warning ? Parent notification ? Disciplinary action"
+ },
+ {
+   "Rule": "Use polite and appropriate language in school.",
+   "Consequence": "Warning ? Detention"
+ },
+ {
+   "Rule": "Arrive to school and all classes on time.",
+   "Consequence": "Late record ? Parent notification"
+ },
+ {
+   "Rule": "Attend school regularly and avoid unnecessary absences.",
+   "Consequence": "Warning ? Administration follow-up"
+ },
+ {
+   "Rule": "Follow the official school dress code or uniform.",
+   "Consequence": "Warning ? Sent home / change required"
+ },
+ {
+   "Rule": "Keep personal appearance clean and appropriate.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Bring all required materials to class.",
+   "Consequence": "Participation grade affected"
+ },
+ {
+   "Rule": "Complete all homework on time.",
+   "Consequence": "Grade reduction"
+ },
+ {
+   "Rule": "Participate actively during lessons.",
+   "Consequence": "Participation grade affected"
+ },
+ {
+   "Rule": "Listen carefully when teachers or classmates are speaking.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Do not interrupt others during class discussions.",
+   "Consequence": "Warning ? Detention"
+ },
+ {
+   "Rule": "Follow all teacher instructions without argument.",
+   "Consequence": "Warning ? Disciplinary action"
+ },
+ {
+   "Rule": "Do not cheat or copy during exams or assignments.",
+   "Consequence": "Zero grade ? Parent meeting"
+ },
+ {
+   "Rule": "Avoid plagiarism by doing your own work.",
+   "Consequence": "Redo work ? Grade penalty"
+ },
+ {
+   "Rule": "Use electronic devices only when allowed.",
+   "Consequence": "Device confiscation"
+ },
+ {
+   "Rule": "Keep phones silent or turned off during class.",
+   "Consequence": "Phone confiscation"
+ },
+ {
+   "Rule": "Do not use devices for non-educational purposes.",
+   "Consequence": "Device restriction"
+ },
+ {
+   "Rule": "Maintain cleanliness in classrooms and hallways.",
+   "Consequence": "Cleaning duty"
+ },
+ {
+   "Rule": "Do not litter; use trash bins properly.",
+   "Consequence": "Cleaning duty"
+ },
+ {
+   "Rule": "Take care of school furniture and equipment.",
+   "Consequence": "Repair cost / disciplinary action"
+ },
+ {
+   "Rule": "Report any damage to school property immediately.",
+   "Consequence": "Warning if not reported"
+ },
+ {
+   "Rule": "Avoid running or unsafe behavior in corridors.",
+   "Consequence": "Warning ? Detention"
+ },
+ {
+   "Rule": "Follow all safety rules during school activities.",
+   "Consequence": "Activity restriction"
+ },
+ {
+   "Rule": "Respect school property and surroundings.",
+   "Consequence": "Disciplinary action"
+ },
+ {
+   "Rule": "Be kind and supportive to classmates.",
+   "Consequence": "Counseling ? Warning"
+ },
+ {
+   "Rule": "Do not bully, tease, or harass others.",
+   "Consequence": "Serious disciplinary action"
+ },
+ {
+   "Rule": "Respect differences among students.",
+   "Consequence": "Warning ? Counseling"
+ },
+ {
+   "Rule": "Ask for permission before leaving the classroom.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Use school facilities responsibly.",
+   "Consequence": "Restriction from use"
+ },
+ {
+   "Rule": "Keep noise levels appropriate during class.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Line up properly when required.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Follow rules during recess and breaks.",
+   "Consequence": "Restriction from activities"
+ },
+ {
+   "Rule": "Do not bring prohibited items to school.",
+   "Consequence": "Confiscation ? Disciplinary action"
+ },
+ {
+   "Rule": "Respect school schedules and timetables.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Complete assigned tasks within deadlines.",
+   "Consequence": "Grade penalty"
+ },
+ {
+   "Rule": "Keep notebooks and materials organized.",
+   "Consequence": "Participation grade affected"
+ },
+ {
+   "Rule": "Cooperate with group work and team activities.",
+   "Consequence": "Participation grade affected"
+ },
+ {
+   "Rule": "Accept feedback from teachers positively.",
+   "Consequence": "Warning"
+ },
+ {
+   "Rule": "Communicate respectfully with all staff members.",
+   "Consequence": "Warning ? Parent contact"
+ },
+ {
+   "Rule": "Report any problems or concerns to a teacher.",
+   "Consequence": "No consequence (encouraged)"
+ },
+ {
+   "Rule": "Follow instructions during emergencies.",
+   "Consequence": "Serious disciplinary action"
+ },
+ {
+   "Rule": "Respect school policies at all times.",
+   "Consequence": "Disciplinary action"
+ },
+ {
+   "Rule": "Avoid damaging or misusing school resources.",
+   "Consequence": "Repair cost ? Suspension"
+ },
+ {
+   "Rule": "Be honest in all school-related matters.",
+   "Consequence": "Warning ? Disciplinary action"
+ },
+ {
+   "Rule": "Show responsibility for your actions.",
+   "Consequence": "Counseling"
+ },
+ {
+   "Rule": "Help maintain a positive school environment.",
+   "Consequence": "Encouraged behavior"
+ },
+ {
+   "Rule": "Respect quiet zones such as libraries.",
+   "Consequence": "Warning ? Removal"
+ },
+ {
+   "Rule": "Follow computer lab and library rules.",
+   "Consequence": "Restriction from access"
+ },
+ {
+   "Rule": "Represent the school positively at all times.",
+   "Consequence": "Warning ? Disciplinary action"
+ },
+ {
+   "Rule": "Strive to do your best academically and behaviorally.",
+   "Consequence": "Encouraged behavior"
+ }
+]

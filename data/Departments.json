@@ -1,0 +1,27 @@
+[
+ {
+   "Department": "Secondaire",
+   "Phone": 9619945190,
+   "Email": "cs.jbeil@rosaire.edu.lb"
+ },
+ {
+   "Department": "Complementaire",
+   "Phone": 9619945190,
+   "Email": "cc.jbeil@rosaire.edu.lb"
+ },
+ {
+   "Department": "Primaire II",
+   "Phone": 9619945190,
+   "Email": "cp2.jbeil@rosaire.edu.lb"
+ },
+ {
+   "Department": "Primaire I",
+   "Phone": 9619945190,
+   "Email": "cp1.jbeil@rosaire.edu.lb"
+ },
+ {
+   "Department": "Maternelle",
+   "Phone": 9619945190,
+   "Email": "cm.jbeil@rosaire.edu.lb"
+ }
+]
