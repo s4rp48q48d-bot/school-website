@@ -11,7 +11,42 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: white;
-  padding: 100px 50px;
+  padding: 120px 50px 50px; /* 🔥 adjusted for header */
+  margin: 0;
+}
+
+/* HEADER (RIBBON) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #c9a74d;
+}
+
+/* FOOTER */
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -49,6 +84,19 @@ tr:hover {
 
 <body>
 
+<!-- 🔥 HEADER (RIBBON) -->
+<header>
+  <img src="images/logo.png">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="student-life.html">Student Life</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="tuition.html">Tuition</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
 <h1>Tuition Fees</h1>
 
 <table>
@@ -61,12 +109,16 @@ tr:hover {
   <tbody id="tuitionTable"></tbody>
 </table>
 
+<!-- 🔥 FOOTER -->
+<footer>
+  © 2026 College Des Soeurs Du Rosaire
+</footer>
+
 <script>
 fetch('data/tuition.json')
 .then(res => res.json())
 .then(data => {
   const table = document.getElementById('tuitionTable');
-
   data.forEach(item => {
     table.innerHTML += `
       <tr>
@@ -105,7 +157,6 @@ fetch('data/tuition.json')
   cursor: pointer;
 }
 
-/* CHATBOX */
 #chatbot {
   position: fixed;
   bottom: 90px;
@@ -122,7 +173,6 @@ fetch('data/tuition.json')
   background: #c9a74d;
   color: white;
   padding: 10px;
-  border-radius: 12px 12px 0 0;
 }
 
 #chat-body {
@@ -140,7 +190,6 @@ fetch('data/tuition.json')
 </style>
 
 <script>
-// TOGGLE CHAT
 const btn = document.getElementById("chatbot-btn");
 const chat = document.getElementById("chatbot");
 
@@ -148,7 +197,6 @@ btn.onclick = () => {
   chat.style.display = chat.style.display === "flex" ? "none" : "flex";
 };
 
-// LOAD CHATBOT DATA
 let responses = [];
 
 fetch('data/chatbot.json')
@@ -157,14 +205,13 @@ fetch('data/chatbot.json')
   responses = data;
 });
 
-// HANDLE INPUT
 const input = document.getElementById("chat-input");
-const body = document.getElementById("chat-body");
+const bodyChat = document.getElementById("chat-body");
 
 input.addEventListener("keypress", function(e){
   if(e.key === "Enter"){
     const userText = input.value;
-    body.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
+    bodyChat.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
 
     let reply = "I don't understand, please contact the school.";
 
@@ -175,8 +222,8 @@ input.addEventListener("keypress", function(e){
     });
 
     setTimeout(() => {
-      body.innerHTML += `<p><strong>Bot:</strong> ${reply}</p>`;
-      body.scrollTop = body.scrollHeight;
+      bodyChat.innerHTML += `<p><strong>Bot:</strong> ${reply}</p>`;
+      bodyChat.scrollTop = bodyChat.scrollHeight;
     }, 500);
 
     input.value = "";
