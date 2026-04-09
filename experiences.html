@@ -20,19 +20,33 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* 🔥 HEADER (RIBBON) */
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   background: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 50px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
 header img {
   height: 50px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #c9a74d;
 }
 
 /* TITLE */
@@ -108,10 +122,20 @@ footer {
 
 <body>
 
+<!-- 🔥 HEADER -->
 <header>
   <img src="images/logo.png">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="student-life.html">Student Life</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="tuition.html">Tuition</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
+<!-- CONTENT -->
 <div class="title">
   <h1>Student Experiences</h1>
 </div>
@@ -123,34 +147,33 @@ footer {
 
 <div class="boxes" id="boxesContainer"></div>
 
+<!-- 🔥 FOOTER -->
 <footer>
   <p>© 2026 College Des Soeurs Du Rosaire</p>
 </footer>
 
+<!-- EXPERIENCES SCRIPT -->
 <script>
-// LOAD EXPERIENCES
 fetch('data/experiences.json')
 .then(res => res.json())
 .then(data => {
   const container = document.getElementById('boxesContainer');
 
   data.forEach(item => {
-    const box = `
+    container.innerHTML += `
       <a href="experience-detail.html?name=${item.Category}">
         <div class="box" style="background-image:url('images/${item.Image}')">
           <h2>${item.Category}</h2>
         </div>
       </a>
     `;
-    container.innerHTML += box;
   });
 });
 </script>
 
-<!-- CHATBOT BUTTON -->
+<!-- CHATBOT -->
 <div id="chatbot-btn">💬</div>
 
-<!-- CHAT WINDOW -->
 <div id="chatbot">
   <div id="chat-header">Chat with us</div>
   <div id="chat-body"></div>
@@ -174,7 +197,6 @@ fetch('data/experiences.json')
   cursor: pointer;
 }
 
-/* CHATBOX */
 #chatbot {
   position: fixed;
   bottom: 90px;
@@ -191,7 +213,6 @@ fetch('data/experiences.json')
   background: #c9a74d;
   color: white;
   padding: 10px;
-  border-radius: 12px 12px 0 0;
 }
 
 #chat-body {
@@ -209,7 +230,6 @@ fetch('data/experiences.json')
 </style>
 
 <script>
-// TOGGLE CHAT
 const btn = document.getElementById("chatbot-btn");
 const chat = document.getElementById("chatbot");
 
@@ -217,7 +237,6 @@ btn.onclick = () => {
   chat.style.display = chat.style.display === "flex" ? "none" : "flex";
 };
 
-// LOAD CHATBOT DATA
 let responses = [];
 
 fetch('data/chatbot.json')
@@ -226,14 +245,13 @@ fetch('data/chatbot.json')
   responses = data;
 });
 
-// HANDLE INPUT
 const input = document.getElementById("chat-input");
-const body = document.getElementById("chat-body");
+const bodyChat = document.getElementById("chat-body");
 
 input.addEventListener("keypress", function(e){
   if(e.key === "Enter"){
     const userText = input.value;
-    body.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
+    bodyChat.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
 
     let reply = "I don't understand, please contact the school.";
 
@@ -244,8 +262,8 @@ input.addEventListener("keypress", function(e){
     });
 
     setTimeout(() => {
-      body.innerHTML += `<p><strong>Bot:</strong> ${reply}</p>`;
-      body.scrollTop = body.scrollHeight;
+      bodyChat.innerHTML += `<p><strong>Bot:</strong> ${reply}</p>`;
+      bodyChat.scrollTop = bodyChat.scrollHeight;
     }, 500);
 
     input.value = "";
